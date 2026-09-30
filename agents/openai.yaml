@@ -1,0 +1,6 @@
+interface:
+  display_name: "Notion Research Notes"
+  short_description: "Rigorous research articles with verified Notion publishing"
+  default_prompt: "Use $notion-research-notes to turn this material into an accessible, rigorous English close-reading article in the specified Notion destination, preserving complete explanations, original figures, data, and worked examples, then read it back to verify the result."
+policy:
+  allow_implicit_invocation: true
