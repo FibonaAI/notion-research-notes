@@ -34,6 +34,10 @@ Continue by explaining the separate costs of training feedback, candidate valida
 
 Reusable pattern: **raw quantities → calculation → meaning of the denominator → excluded costs → limits of the conclusion**.
 
+## Architecture Figures That Can Be Read Independently
+
+For a request such as "mark the model architecture in detail," use numbered markers on the original figure with matching explanations. Explain operations, dependencies, training-only branches, and timing indices where relevant; highlighting only the caption does not complete the request. The [architecture annotation workflow](architecture-annotations.md) contains layout, evidence, export, and delivery checks, with Moshi as a worked reference. Its four figures and 36 notes illustrate coverage rather than prescribe a quota.
+
 ## Adaptable Article Outline
 
 Select what the material needs; do not require every subsection to repeat the same labels:

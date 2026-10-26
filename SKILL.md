@@ -1,6 +1,6 @@
 ---
 name: notion-research-notes
-description: Turn papers, blog posts, and technical materials into accessible, rigorous English close-reading articles, and publish or update them in Notion when requested. Use for requests such as "summarize this in Notion" or "this week's paper notes," or invoke explicitly to produce a local draft in the same style. Not for general Notion navigation management or unrelated notes.
+description: Turn papers, blog posts, and technical materials into accessible, rigorous English close-reading articles, including detailed architecture figure annotations when requested, and publish or update them in Notion when requested. Use for requests such as "summarize this in Notion" or "this week's paper notes," or invoke explicitly to produce a local draft in the same style. Not for general Notion navigation management or unrelated notes.
 ---
 
 # Notion Research Notes
@@ -24,6 +24,12 @@ Open with one sentence explaining what the work does, then identify its sources 
 - **Experiments:** Retain data tables or legible original tables that support the conclusion; do not substitute "significant improvement." State the model, task/data split, baselines, metric direction, sample size or budget. Calculate important differences and include failures, regressions, and applicability limits.
 - **Conclusions:** Distinguish percentage points from relative percentages, individual results from averages, the point at which the best candidate was found from the full budget, and rollout counts from total cost. If the abstract or a caption conflicts with a table, identify the conflict and explain it using verifiable data rather than silently correcting the source.
 - End each page/section with a one-sentence takeaway. Close the article with a few central conclusions and limitations. Put search procedures, extraction warnings, and internal indexes only in a closing appendix; do not turn tool logs into the main article unless requested.
+
+## Detailed Architecture Figures
+
+When the user asks to label, mark up, or closely explain a model architecture, dataflow, or timing diagram, read [the architecture annotation workflow](references/architecture-annotations.md). Mark the original figure with numbered callouts and matching explanations, grounded in its caption and nearby methods, equations, or configuration tables. Distinguish training from inference, dataflow from conditioning, illustrative counts from actual configuration, and time from within-step generation or delays where relevant.
+
+Use the same annotation content for the article, figure exports, and optional HTML preview. Inspect every rendered page and verify the actual delivery link or saved file before claiming completion. A request for diagrams alone does not require regenerating the entire article or publishing it to Notion.
 
 ## One Canonical Article and Notion Publishing
 
